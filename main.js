@@ -16,32 +16,6 @@ function updateCounts() { //se crear funcion para calcular y actualizar los cont
   completedCount.textContent = completedTasksCount;
 }
 
-function createTaskItem(taskText) { //se crea funcion para crear li que es la tarea
-  tasksCount++;
-
-  const taskItem = document.createElement("li");
-  taskItem.classList.add("task");
-
-  const taskDescription = document.createElement("div");
-  taskDescription.textContent = taskText;
-  taskDescription.classList.add("task-description");
-
-  const taskButtons = document.createElement("div");
-  taskButtons.classList.add("task-buttons");
-
-  // Creación de botones y eventos a realizar
-
-  taskButtons.appendChild(completeBtn);
-  taskButtons.appendChild(deleteBtn);
-
-  taskItem.appendChild(taskDescription);
-  taskItem.appendChild(taskButtons);
-
-  updateCounts();
-
-  return taskItem;
-}
-
 function createTaskItem(taskText) {
   tasksCount++; // Aumenta el contador de tareas totales
 
