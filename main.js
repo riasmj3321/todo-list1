@@ -68,8 +68,10 @@ function createTaskItem(taskText) {
     taskItem.classList.toggle("completed"); // Alterna la clase "completed" en el elemento de tarea
     if (taskItem.classList.contains("completed")) {
       completedTasksCount++;
+      taskDescription.style.color = "red";
     } else {
       completedTasksCount--;
+      taskDescription.style.color = "black";
     }
     updateCounts(); // Actualiza los contadores de tareas pendientes y completadas
   });

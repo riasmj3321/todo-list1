@@ -2,10 +2,10 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('fondo-body.jpg'); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen de fondo */
-  background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el cuerpo */
-  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
-  background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
+  background-image: url('fondo-body.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
 }
 
 .header {
@@ -13,13 +13,26 @@ body {
   color: white;
   text-align: center;
   padding: 20px;
-  /* ... Otros estilos para el encabezado ... */
+}
+
+.header h1 {
+  font-size: 40px;
+  animation: fadeInUp 1s forwards;
+  transition: color 0.3s ease-in-out; 
+  font-weight: bold;
+}
+
+.header h1:hover {
+  color: #f4f807; 
 }
 
 #taskInput {
   padding: 10px;
   width: 30%;
   font-size: 15px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
 #addTaskBtn {
@@ -29,11 +42,11 @@ body {
   border: none;
   cursor: pointer;
   font-size: 15px;
-
+  font-weight: bold;
 }
 
 #addTaskBtn:hover {
-  background-color: #6f00ff; /* Cambia el color al pasar el cursor */
+  background-color: #6f00ff; 
 }
 
 
@@ -47,29 +60,33 @@ body {
 
 .main-content {
   max-width: 900px;
-  margin: 0 auto;
-  background-color: #f2f2f2;
+  margin: 20px auto;
+  background-color: #9448f7;
   padding: 20px;
-  margin: auto;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
   box-shadow: 0px 0px 5px 5px;
 }
 
 ol {
-  padding-left: 20px; /* Indentación para las enumeraciones */
+  padding-left: 20px; 
 }
 
 .task {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  background-color: #f2f2f2;
 }
 
 .task-description {
   flex: 1;
   padding: 10px;
+  color: black;
 }
 
 .task-buttons {
@@ -90,7 +107,7 @@ ol {
 
 .complete-btn,
 .delete-btn:hover {
-  background-color: #6f00ff; /* Cambia el color al pasar el cursor */
+  background-color: #6f00ff; 
 }
 
 .completed {
