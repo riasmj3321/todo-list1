@@ -8,6 +8,11 @@ body {
   background-attachment: fixed; 
 }
 
+body.dark-theme {
+  background-color: #333;
+  color: white;
+}
+
 .header {
   background-color: rgba(0, 0, 0, 0.1);
   color: white;
@@ -198,4 +203,12 @@ li {
   color: white;
   text-align: center;
   font-size: 20px;
+}
+
+#themeToggle {
+  padding: 5px 10px;
+  background-color: rgb(198, 235, 31);
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
 }

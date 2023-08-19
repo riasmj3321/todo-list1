@@ -98,3 +98,10 @@ function addTask() { // esta funcion obtiene el texto ingresado en el campo de e
     taskInput.value = "";
   }
 }
+
+const themeToggle = document.getElementById("themeToggle"); //constante para el boton iluminar
+const body = document.body;
+
+themeToggle.addEventListener("click", () => {
+  body.classList.toggle("dark-theme"); // Alterna la clase dark-theme en el body
+});
