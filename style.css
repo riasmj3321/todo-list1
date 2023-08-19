@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('fondo-body.jpg'); 
+  background-image: url('fondo-02.jpg'); 
   background-size: cover; 
   background-repeat: no-repeat; 
   background-attachment: fixed; 
@@ -61,7 +61,6 @@ body {
 .main-content {
   max-width: 900px;
   margin: 20px auto;
-  background-color: #9448f7;
   padding: 20px;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -107,7 +106,7 @@ ol {
 
 .complete-btn,
 .delete-btn:hover {
-  background-color: #6f00ff; 
+  background-color: #343434; 
 }
 
 .completed {
@@ -115,7 +114,7 @@ ol {
 }
 
 .delete-btn{
-  background-color: rgb(221, 39, 188);
+  background-color: rgb(47, 141, 235);
 }
 
 
